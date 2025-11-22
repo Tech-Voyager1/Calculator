@@ -18,10 +18,8 @@ class _NewCalcState extends State<NewCalc> {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
 
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
-      home: Scaffold(
+    return SafeArea(
+      child: Scaffold(
         body: Column(
           children: [
             Expanded(
